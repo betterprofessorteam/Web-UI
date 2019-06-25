@@ -4,6 +4,9 @@
         p {
             padding: 10px;
         }
+        h2 {
+            padding: 10px;
+        }
     }
 
     .imgTwo{
@@ -62,7 +65,22 @@
                 font-size: 3rem;
                 h3 {
                     display:flex;
-                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .btn {
+                cursor: pointer;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                p {
+                   font-weight: bold;
+                   .button(navy, rgb(223, 226, 21), 1.4rem);
+                }
+                @media @mobile {
+                    width: 100%;
+                    font-size: 1.8rem;
+                    cursor: not-allowed;
                 }
             }
         }
@@ -83,6 +101,21 @@
                 font-size: 1rem;
                 flex-direction: row;
                 font-size: 3rem;
+            }
+            .btn {
+                cursor: pointer;
+                width: 100%;
+                display:flex;
+                justify-content: center;
+                p {
+                    font-weight: bold;
+                    .button(navy, rgb(223, 226, 21), 1.4rem);
+                }
+                @media @mobile {
+                    width: 100%;
+                    font-size:1.8rem;
+                    cursor: not-allowed;
+                }
             }
         }
     

@@ -205,6 +205,7 @@ nav a {
   text-decoration: none;
   color: navy;
   font-weight: bold;
+  font-size: 1.9rem;
 }
 @media (max-width: 500px) {
   nav a {
@@ -219,6 +220,9 @@ nav a {
   font-weight: bolder;
 }
 .container .information p {
+  padding: 10px;
+}
+.container .information h2 {
   padding: 10px;
 }
 .container .imgTwo .middleImg {
@@ -270,7 +274,32 @@ nav a {
   }
   .container .targetMarket .professors h3 {
     display: flex;
-    align-items: center;
+    justify-content: center;
+  }
+}
+.container .targetMarket .professors .btn {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .targetMarket .professors .btn p {
+  font-weight: bold;
+  background-color: navy;
+  color: #dfe215;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .container .targetMarket .professors .btn {
+    width: 100%;
+    font-size: 1.8rem;
+    cursor: not-allowed;
   }
 }
 .container .targetMarket .candidates {
@@ -292,6 +321,31 @@ nav a {
     font-size: 1rem;
     flex-direction: row;
     font-size: 3rem;
+  }
+}
+.container .targetMarket .candidates .btn {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .targetMarket .candidates .btn p {
+  font-weight: bold;
+  background-color: navy;
+  color: #dfe215;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .container .targetMarket .candidates .btn {
+    width: 100%;
+    font-size: 1.8rem;
+    cursor: not-allowed;
   }
 }
 @media (max-width: 500px) {
