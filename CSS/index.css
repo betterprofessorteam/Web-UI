@@ -179,7 +179,8 @@ p {
     display: flex;
     margin: 5px;
     font-size: 1rem;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     font-size: 3rem;
   }
 }
@@ -241,6 +242,9 @@ nav a {
 .container .middleSection p {
   padding: 10px;
 }
+.container .middleSection h2 {
+  padding: 10px;
+}
 .container .targetMarket {
   max-width: 100%;
   margin: 30px auto;
@@ -250,6 +254,9 @@ nav a {
   justify-content: space-evenly;
 }
 .container .targetMarket p {
+  padding: 10px;
+}
+.container .targetMarket h3 {
   padding: 10px;
 }
 .container .targetMarket .professors {
@@ -293,7 +300,8 @@ nav a {
   padding: 5px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  border: 1px solid greenyellow;
 }
 @media (max-width: 500px) {
   .container .targetMarket .professors .btn {
@@ -339,7 +347,8 @@ nav a {
   padding: 5px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  border: 1px solid greenyellow;
 }
 @media (max-width: 500px) {
   .container .targetMarket .candidates .btn {
