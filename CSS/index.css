@@ -1,3 +1,168 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h1 {
+  font-size: 3.3rem;
+}
+h2 {
+  font-size: 3.1rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 2.6rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 .top {
   max-width: 100%;
   margin: 0 auto;
@@ -14,7 +179,8 @@
     display: flex;
     margin: 5px;
     font-size: 1rem;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     font-size: 3rem;
   }
 }
@@ -40,6 +206,7 @@ nav a {
   text-decoration: none;
   color: navy;
   font-weight: bold;
+  font-size: 1.9rem;
 }
 @media (max-width: 500px) {
   nav a {
@@ -52,4 +219,160 @@ nav a {
 .title {
   color: navy;
   font-weight: bolder;
+}
+.container .information p {
+  padding: 10px;
+}
+.container .information h2 {
+  padding: 10px;
+}
+.container .imgTwo .middleImg {
+  margin: 20px auto;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .container .imgTwo .middleImg {
+    border-radius: 10px;
+  }
+}
+.container .middleSection p {
+  padding: 10px;
+}
+.container .middleSection h2 {
+  padding: 10px;
+}
+.container .targetMarket {
+  max-width: 100%;
+  margin: 30px auto;
+  border: 1px solid yellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.container .targetMarket p {
+  padding: 10px;
+}
+.container .targetMarket h3 {
+  padding: 10px;
+}
+.container .targetMarket .professors {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 2px solid #0084ff;
+}
+.container .targetMarket .professors h3 {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .container .targetMarket .professors {
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    font-size: 1rem;
+    flex-direction: row;
+    font-size: 3rem;
+  }
+  .container .targetMarket .professors h3 {
+    display: flex;
+    justify-content: center;
+  }
+}
+.container .targetMarket .professors .btn {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .targetMarket .professors .btn p {
+  font-weight: bold;
+  background-color: navy;
+  color: #dfe215;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid greenyellow;
+}
+@media (max-width: 500px) {
+  .container .targetMarket .professors .btn {
+    width: 100%;
+    font-size: 1.8rem;
+    cursor: not-allowed;
+  }
+}
+.container .targetMarket .candidates {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 2px solid red;
+}
+.container .targetMarket .candidates h3 {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .container .targetMarket .candidates {
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    font-size: 1rem;
+    flex-direction: row;
+    font-size: 3rem;
+  }
+}
+.container .targetMarket .candidates .btn {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .targetMarket .candidates .btn p {
+  font-weight: bold;
+  background-color: navy;
+  color: #dfe215;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid greenyellow;
+}
+@media (max-width: 500px) {
+  .container .targetMarket .candidates .btn {
+    width: 100%;
+    font-size: 1.8rem;
+    cursor: not-allowed;
+  }
+}
+@media (max-width: 500px) {
+  .container .targetMarket {
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    font-size: 1rem;
+    flex-direction: row;
+    font-size: 3rem;
+  }
+}
+.container footer {
+  color: navy;
+  background: powderblue;
+  padding: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
