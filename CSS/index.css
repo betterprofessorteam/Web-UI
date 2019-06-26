@@ -226,6 +226,25 @@ nav a {
 .container .information h2 {
   padding: 10px;
 }
+.container .information .btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .information .btn p {
+  background-color: navy;
+  color: #dfe215;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  width: 20%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid greenyellow;
+}
 .container .imgTwo .middleImg {
   margin: 20px auto;
   width: 100%;
