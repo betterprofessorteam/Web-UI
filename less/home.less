@@ -14,19 +14,26 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            cursor: pointer;
 
             p{
                 background-color: navy;
                 color: rgb(223, 226, 21);
                 font-size: 1.4rem;
                 border-radius: 5px;
-                width: 20%;
+                width: 15%;
                 padding: 5px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
                 border: 1px solid greenyellow;
+            }
+            @media @mobile {
+                width: 100%;
+                font-size:1.8rem;
+                cursor: not-allowed;
+                display: none;
             }
 
         }
@@ -158,14 +165,14 @@
         }
     }
 
-    footer {
-        color: navy;
-        background: powderblue;
-        padding: 10px 0;
-        // border: 1px double #e0e0e0;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    // footer {
+    //     color: navy;
+    //     background: powderblue;
+    //     padding: 10px 0;
+    //     // border: 1px double #e0e0e0;
+    //     border-radius: 10px;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //   }
 }
