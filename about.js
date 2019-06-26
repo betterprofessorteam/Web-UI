@@ -2,6 +2,9 @@ class Content{
     constructor(contentElement){
         this.contentElementProp=contentElement;
     }
+    seeAbout(){
+        this.contentElementProp.classList.toggle('.something');
+    }
 }
 
 
@@ -13,11 +16,15 @@ class Tab {
         this.about= Array.from(this.about).map(aboutItem => new Content(aboutItem));
         this.element.addEventListener('click', () => this.dropContent());
     }
-    // this.contentElement = document.querySelector(`div.about[data-tab="${this.tabNum}"]`);
+
     //functions go here! -Ryan
     dropContent(event) {
-        let tab = querySelectorAll(".link");
-        
+        let tabs = querySelectorAll(".link");
+        let drops = querySelectorAll(".about");
+        drops.forEach(drop =>{
+            drop.style.display="none"
+        });
+
     }
 }
 
