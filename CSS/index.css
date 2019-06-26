@@ -400,6 +400,30 @@ nav a {
     font-size: 3rem;
   }
 }
+.navteam .tabLinks {
+  width: 100%;
+  border: 1px solid palevioletred;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.navteam .link {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  margin: 40px auto;
+  padding: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+.navteam .mateContent {
+  border: 1px solid green;
+}
+.navteam .mateContent .about {
+  border: 1px solid darkorange;
+}
 footer {
   color: navy;
   background: powderblue;
