@@ -163,6 +163,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.aboutContainer {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 .top {
   max-width: 100%;
   margin: 0 auto;
@@ -225,6 +230,34 @@ nav a {
 }
 .container .information h2 {
   padding: 10px;
+}
+.container .information .btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}
+.container .information .btn p {
+  background-color: navy;
+  color: #dfe215;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  width: 15%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid greenyellow;
+}
+@media (max-width: 500px) {
+  .container .information .btn {
+    width: 100%;
+    font-size: 1.8rem;
+    cursor: not-allowed;
+    display: none;
+  }
 }
 .container .imgTwo .middleImg {
   margin: 20px auto;
@@ -367,7 +400,31 @@ nav a {
     font-size: 3rem;
   }
 }
-.container footer {
+.navteam .tabLinks {
+  width: 100%;
+  border: 1px solid palevioletred;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.navteam .link {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  margin: 40px auto;
+  padding: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+.navteam .mateContent {
+  border: 1px solid green;
+}
+.navteam .mateContent .about {
+  border: 1px solid darkorange;
+}
+footer {
   color: navy;
   background: powderblue;
   padding: 10px 0;
