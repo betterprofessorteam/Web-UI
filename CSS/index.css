@@ -236,6 +236,14 @@ nav a {
 }
 .title {
   color: #d87867;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.title .fas {
+  font-size: 1rem;
+  margin: 0 5px;
+  color: #d87867;
 }
 .container .information p {
   padding: 10px;
@@ -250,7 +258,7 @@ nav a {
   justify-content: center;
   cursor: pointer;
 }
-.container .information .btn p {
+.container .information .btn a {
   background-color: #254e58;
   color: #d09b00;
   font-size: 1.4rem;
@@ -261,6 +269,7 @@ nav a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  text-decoration: none;
   border: 1px solid greenyellow;
 }
 @media (max-width: 500px) {
@@ -334,8 +343,9 @@ nav a {
   display: flex;
   justify-content: center;
 }
-.container .targetMarket .professors .btn p {
+.container .targetMarket .professors .btn a {
   font-weight: bold;
+  text-decoration: none;
   background-color: #254e58;
   color: #d09b00;
   font-size: 1.4rem;
@@ -380,8 +390,9 @@ nav a {
   display: flex;
   justify-content: center;
 }
-.container .targetMarket .candidates .btn p {
+.container .targetMarket .candidates .btn a {
   font-weight: bold;
+  text-decoration: none;
   background-color: #254e58;
   color: #d09b00;
   font-size: 1.4rem;
@@ -476,22 +487,24 @@ body {
 .navteam .mateContent .about .aboutParent .name .aboutImg {
   border: 1px solid green;
   border-radius: 5px;
-  width: 70%;
+  width: 80%;
 }
 @media (max-width: 500px) {
   .navteam .mateContent .about .aboutParent .name .aboutImg {
-    width: 90%;
+    width: 97%;
   }
 }
 .navteam .mateContent .about .aboutParent .name h3 {
   border: 1px solid black;
   display: flex;
-  width: 70%;
+  justify-content: center;
+  width: 97%;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .navteam .mateContent .about .aboutParent .name h3 {
     font-size: 2rem;
-    width: 90%;
+    width: 97%;
   }
 }
 @media (max-width: 500px) {
