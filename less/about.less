@@ -7,17 +7,20 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.4);
 
         .link {
-            border: 1px solid red;
+            border: 1.3px solid rgb(208,155,0);
+            border-radius: 5px;
+            background-color: rgb(234,176,0);
             display: flex;
+            color: rgb(229,231,233);
             // flex-wrap: wrap;
             justify-content: center;
             width: 15%;
             margin: 40px auto;
             padding: 5px;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             text-align: center;
             cursor: pointer;
         }
@@ -33,11 +36,60 @@
         display: flex;
         
         .about {
-            border: 1px solid darkorange;
+            // border: 1px solid darkorange;
             display: none;
-            padding: 7%;
+            padding: 2%;
             height: 250px;
-
+            .aboutParent{
+                display: flex;
+                justify-content: space-between;
+                .name{
+                    border: 1px solid darkorange;
+                    display:flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 25%;
+                    .aboutImg {
+                        border: 1px solid green;
+                        border-radius: 5px;
+                        width: 70%;
+                        @media @mobile {
+                            width: 90%;
+                        }
+                    }
+                    h3 {
+                        border: 1px solid black;
+                        display:flex;
+                        // justify-content: center;
+                        width: 70%;
+                        @media @mobile {
+                            font-size: 2rem;
+                            width: 90%;
+                        }
+                    }
+                    @media @mobile {
+                        width: 30%;
+                    }
+                }
+                .me{
+                    border: 1px solid magenta;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 73%;
+                    justify-content: center;
+                    p {
+                        display: flex;
+                        border: 1px solid black;
+                    }
+                    @media @mobile {
+                        width: 70%;
+                    }
+                }
+            }
+            @media @mobile {
+                height: 200px;
+            }
         }
 
         .visible {

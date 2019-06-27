@@ -148,7 +148,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Lobster', serif;
 }
 h1 {
   font-size: 3.3rem;
@@ -236,7 +236,6 @@ nav a {
 }
 .title {
   color: #d87867;
-  font-weight: bolder;
 }
 .container .information p {
   padding: 10px;
@@ -431,16 +430,19 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
 }
 .navteam .tabLinks .link {
-  border: 1px solid red;
+  border: 1.3px solid #d09b00;
+  border-radius: 5px;
+  background-color: #eab000;
   display: flex;
+  color: #e5e7e9;
   justify-content: center;
   width: 15%;
   margin: 40px auto;
   padding: 5px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-align: center;
   cursor: pointer;
 }
@@ -455,10 +457,68 @@ body {
   display: flex;
 }
 .navteam .mateContent .about {
-  border: 1px solid darkorange;
   display: none;
-  padding: 7%;
+  padding: 2%;
   height: 250px;
+}
+.navteam .mateContent .about .aboutParent {
+  display: flex;
+  justify-content: space-between;
+}
+.navteam .mateContent .about .aboutParent .name {
+  border: 1px solid darkorange;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+}
+.navteam .mateContent .about .aboutParent .name .aboutImg {
+  border: 1px solid green;
+  border-radius: 5px;
+  width: 70%;
+}
+@media (max-width: 500px) {
+  .navteam .mateContent .about .aboutParent .name .aboutImg {
+    width: 90%;
+  }
+}
+.navteam .mateContent .about .aboutParent .name h3 {
+  border: 1px solid black;
+  display: flex;
+  width: 70%;
+}
+@media (max-width: 500px) {
+  .navteam .mateContent .about .aboutParent .name h3 {
+    font-size: 2rem;
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .navteam .mateContent .about .aboutParent .name {
+    width: 30%;
+  }
+}
+.navteam .mateContent .about .aboutParent .me {
+  border: 1px solid magenta;
+  display: flex;
+  flex-wrap: wrap;
+  width: 73%;
+  justify-content: center;
+}
+.navteam .mateContent .about .aboutParent .me p {
+  display: flex;
+  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .navteam .mateContent .about .aboutParent .me {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .navteam .mateContent .about {
+    height: 200px;
+  }
 }
 .navteam .mateContent .visible {
   color: blue;
