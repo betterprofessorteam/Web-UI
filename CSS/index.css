@@ -1,3 +1,9 @@
+.h2p-space p {
+  padding: 10px;
+}
+.h2p-space h2 {
+  padding: 10px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -149,7 +155,6 @@ h1 {
 }
 h2 {
   font-size: 3.1rem;
-  font-weight: bold;
 }
 h3 {
   font-size: 2.6rem;
@@ -162,11 +167,21 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  background-image: url("https://images.unsplash.com/photo-1546448396-6aef80193ceb?ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80");
+  background-position: center left;
+  background-size: cover;
 }
 .aboutContainer {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .aboutContainer {
+    background-image: url("https://images.unsplash.com/photo-1546448396-6aef80193ceb?ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80");
+    background-position: center left;
+    background-size: cover;
+  }
 }
 .top {
   max-width: 100%;
@@ -175,14 +190,13 @@ p {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  background-color: powderblue;
-  border-bottom: thin inset navy;
+  background-color: #88bdbc;
+  border-bottom: thin inset #254e58;
 }
 @media (max-width: 500px) {
   .top {
     width: 100%;
     display: flex;
-    margin: 5px;
     font-size: 1rem;
     flex-direction: column;
     align-items: center;
@@ -209,8 +223,7 @@ nav {
 }
 nav a {
   text-decoration: none;
-  color: navy;
-  font-weight: bold;
+  color: #e98d7b;
   font-size: 1.9rem;
 }
 @media (max-width: 500px) {
@@ -222,7 +235,7 @@ nav a {
   }
 }
 .title {
-  color: navy;
+  color: #d87867;
   font-weight: bolder;
 }
 .container .information p {
@@ -239,8 +252,8 @@ nav a {
   cursor: pointer;
 }
 .container .information .btn p {
-  background-color: navy;
-  color: #dfe215;
+  background-color: #254e58;
+  color: #d09b00;
   font-size: 1.4rem;
   border-radius: 5px;
   width: 15%;
@@ -307,7 +320,6 @@ nav a {
   .container .targetMarket .professors {
     width: 100%;
     display: flex;
-    margin: 5px;
     font-size: 1rem;
     flex-direction: row;
     font-size: 3rem;
@@ -325,8 +337,8 @@ nav a {
 }
 .container .targetMarket .professors .btn p {
   font-weight: bold;
-  background-color: navy;
-  color: #dfe215;
+  background-color: #254e58;
+  color: #d09b00;
   font-size: 1.4rem;
   border-radius: 5px;
   width: 100%;
@@ -358,7 +370,6 @@ nav a {
   .container .targetMarket .candidates {
     width: 100%;
     display: flex;
-    margin: 5px;
     font-size: 1rem;
     flex-direction: row;
     font-size: 3rem;
@@ -372,8 +383,8 @@ nav a {
 }
 .container .targetMarket .candidates .btn p {
   font-weight: bold;
-  background-color: navy;
-  color: #dfe215;
+  background-color: #254e58;
+  color: #d09b00;
   font-size: 1.4rem;
   border-radius: 5px;
   width: 100%;
@@ -394,20 +405,35 @@ nav a {
   .container .targetMarket {
     width: 100%;
     display: flex;
-    margin: 5px;
     font-size: 1rem;
     flex-direction: row;
     font-size: 3rem;
   }
+}
+body {
+  line-height: 1;
+  background-image: url("https://images.unsplash.com/photo-1539592071786-616fb62b6c27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 500px) {
+  body {
+    background-image: none;
+  }
+}
+.navteam {
+  margin: 30px auto;
 }
 .navteam .tabLinks {
   width: 100%;
   border: 1px solid palevioletred;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.5);
 }
-.navteam .link {
+.navteam .tabLinks .link {
   border: 1px solid red;
   display: flex;
   justify-content: center;
@@ -420,15 +446,68 @@ nav a {
 }
 .navteam .mateContent {
   border: 1px solid green;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1510070009289-b5bc34383727?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-position: bottom right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px auto;
+  display: flex;
 }
 .navteam .mateContent .about {
   border: 1px solid darkorange;
+  display: none;
+  padding: 7%;
+  height: 250px;
+}
+.navteam .mateContent .visible {
+  color: blue;
+  display: block;
+}
+@media (max-width: 500px) {
+  .navteam .mateContent {
+    display: flex;
+    justify-content: center;
+  }
+}
+.aboutContainer .companyMission p {
+  padding: 10px;
+}
+.aboutContainer .companyMission h2 {
+  padding: 10px;
+}
+.aboutContainer .teamDescription p {
+  padding: 10px;
+}
+.aboutContainer .teamDescription h2 {
+  padding: 10px;
+}
+.aboutContainer .companyCulture p {
+  padding: 10px;
+}
+.aboutContainer .companyCulture h2 {
+  padding: 10px;
+}
+.aboutContainer .companyHistory p {
+  padding: 10px;
+}
+.aboutContainer .companyHistory h2 {
+  padding: 10px;
+}
+.aboutContainer .companyHistory h3 {
+  padding: 10px;
+}
+.aboutContainer .stock p {
+  padding: 10px;
+}
+.aboutContainer .stock h2 {
+  padding: 10px;
 }
 footer {
-  color: navy;
-  background: powderblue;
+  color: #d87867;
+  background: #88bdbc;
   padding: 10px 0;
-  border-radius: 10px;
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;

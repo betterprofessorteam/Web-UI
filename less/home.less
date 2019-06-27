@@ -1,12 +1,7 @@
 
 .container {
     .information {
-        p {
-            padding: 10px;
-        }
-        h2 {
-            padding: 10px;
-        }
+        .h2p-space();
 
         
         .btn {
@@ -17,8 +12,8 @@
             cursor: pointer;
 
             p{
-                background-color: navy;
-                color: rgb(223, 226, 21);
+                background-color: rgb(37, 78, 88);
+                color: rgb(208,155,0);
                 font-size: 1.4rem;
                 border-radius: 5px;
                 width: 15%;
@@ -56,12 +51,7 @@
         }
     }
     .middleSection {
-        p {
-            padding: 10px;
-        }
-        h2 {
-            padding: 10px;
-        }
+        .h2p-space();
     }
 
     .targetMarket {
@@ -95,7 +85,6 @@
             @media @mobile {
                 width: 100%;
                 display: flex;
-                margin: 5px;
                 font-size: 1rem;
                 flex-direction: row;
                 font-size: 3rem;
@@ -111,7 +100,7 @@
                 justify-content: center;
                 p {
                    font-weight: bold;
-                   .button(navy, rgb(223, 226, 21), 1.4rem);
+                   .button(rgb(37, 78, 88), rgb(208,155,0), 1.4rem);
                 }
                 @media @mobile {
                     width: 100%;
@@ -133,7 +122,6 @@
             @media @mobile {
                 width: 100%;
                 display: flex;
-                margin: 5px;
                 font-size: 1rem;
                 flex-direction: row;
                 font-size: 3rem;
@@ -145,7 +133,7 @@
                 justify-content: center;
                 p {
                     font-weight: bold;
-                    .button(navy, rgb(223, 226, 21), 1.4rem);
+                    .button(rgb(37, 78, 88), rgb(208,155,0), 1.4rem);
                 }
                 @media @mobile {
                     width: 100%;
@@ -158,11 +146,29 @@
         @media @mobile {
             width: 100%;
             display: flex;
-            margin: 5px;
             font-size: 1rem;
             flex-direction: row;
             font-size: 3rem;
         }
     }
     
+}
+
+
+body {
+	line-height: 1;
+	background-image: url("https://images.unsplash.com/photo-1539592071786-616fb62b6c27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+	background-position: top left;
+	background-size: cover;
+    background-repeat: no-repeat;
+
+    // @media @mobile {
+    //     display: none;
+    // }
+}
+// body mobile view here:
+@media @mobile {
+    body {
+        background-image: none;
+    }
 }
