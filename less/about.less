@@ -127,7 +127,36 @@
     }
 
     .stock {
-        .h2p-space();
+        h2 {
+            padding: 10px;
+        }
+        .activityContainer {
+            padding: 10px;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            // align-items: center;
+            .activity {
+                display: flex;
+                flex-direction: column;
+                h3{
+                    display: flex;
+                    font-size: 2.2rem;
+                    @media @mobile {
+                        font-size: 1.5rem;
+                    }
+                }
+                p {
+                    display: flex;
+                    justify-content: center;
+                    padding: 5px;
+                    font-size: 1.6rem;
+                    @media @mobile {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
     }
 
 }

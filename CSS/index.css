@@ -584,11 +584,38 @@ body {
 .aboutContainer .companyHistory h3 {
   padding: 10px;
 }
-.aboutContainer .stock p {
-  padding: 10px;
-}
 .aboutContainer .stock h2 {
   padding: 10px;
+}
+.aboutContainer .stock .activityContainer {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.aboutContainer .stock .activityContainer .activity {
+  display: flex;
+  flex-direction: column;
+}
+.aboutContainer .stock .activityContainer .activity h3 {
+  display: flex;
+  font-size: 2.2rem;
+}
+@media (max-width: 500px) {
+  .aboutContainer .stock .activityContainer .activity h3 {
+    font-size: 1.5rem;
+  }
+}
+.aboutContainer .stock .activityContainer .activity p {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .aboutContainer .stock .activityContainer .activity p {
+    font-size: 1.3rem;
+  }
 }
 footer {
   color: #d87867;
