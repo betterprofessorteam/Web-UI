@@ -24,9 +24,11 @@
                 justify-content: center;
                 text-align: center;
                 text-decoration: none;
-                border: 1px solid greenyellow;
                 @media @mobile {
                     width: 75%;
+                }
+                @media @tablet {
+                    width: 50%;
                 }
             }
             @media @mobile {
@@ -98,6 +100,15 @@
                     justify-content: center;
                 }
             }
+            @media @tablet {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                h3 {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
             .btn {
                 cursor: pointer;
                 width: 100%;
@@ -131,6 +142,15 @@
                 font-size: 1rem;
                 flex-direction: row;
                 font-size: 3rem;
+            }
+            @media @tablet {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                h3 {
+                    display: flex;
+                    justify-content: center;
+                }
             }
             .btn {
                 cursor: pointer;

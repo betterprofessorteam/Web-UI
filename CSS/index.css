@@ -183,6 +183,13 @@ p {
     background-size: cover;
   }
 }
+@media (max-width: 800px) {
+  .aboutContainer {
+    background-image: url("https://images.unsplash.com/photo-1546448396-6aef80193ceb?ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80");
+    background-position: center left;
+    background-size: cover;
+  }
+}
 .top {
   max-width: 100%;
   margin: 0 auto;
@@ -219,12 +226,24 @@ nav a:hover {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  nav a:hover {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   nav {
     width: 100%;
     display: flex;
-    margin: 5px;
     font-size: 1rem;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    width: 100%;
+    display: flex;
     flex-direction: row;
     align-items: center;
   }
@@ -235,6 +254,14 @@ nav a {
   font-size: 1.9rem;
 }
 @media (max-width: 500px) {
+  nav a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 800px) {
   nav a {
     width: 100%;
     display: flex;
@@ -279,11 +306,15 @@ nav a {
   justify-content: center;
   text-align: center;
   text-decoration: none;
-  border: 1px solid greenyellow;
 }
 @media (max-width: 500px) {
   .container .information .btn a {
     width: 75%;
+  }
+}
+@media (max-width: 800px) {
+  .container .information .btn a {
+    width: 50%;
   }
 }
 @media (max-width: 500px) {
@@ -350,6 +381,17 @@ nav a {
     justify-content: center;
   }
 }
+@media (max-width: 800px) {
+  .container .targetMarket .professors {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .container .targetMarket .professors h3 {
+    display: flex;
+    justify-content: center;
+  }
+}
 .container .targetMarket .professors .btn {
   cursor: pointer;
   width: 100%;
@@ -395,6 +437,17 @@ nav a {
     font-size: 1rem;
     flex-direction: row;
     font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .container .targetMarket .candidates {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .container .targetMarket .candidates h3 {
+    display: flex;
+    justify-content: center;
   }
 }
 .container .targetMarket .candidates .btn {
