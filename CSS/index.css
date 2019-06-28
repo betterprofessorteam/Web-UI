@@ -211,6 +211,14 @@ nav {
   font-size: 1.4rem;
   margin: 1rem;
 }
+nav a:hover {
+  color: #e5e7e9;
+}
+@media (max-width: 500px) {
+  nav a:hover {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   nav {
     width: 100%;
