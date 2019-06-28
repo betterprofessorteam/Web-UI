@@ -12,3 +12,24 @@ The about us page didn't have too many instructions to begin with, making it fle
 
 #other notes
 the variables.less file has the relevant pixel sizes for the mobile and tablet view. 
+These are the relevant colors used in the webpages:
+/ light yellow:
+// rgb(234,176,0)
+
+// dark yellow:
+// rgb(208,155,0)
+
+//darkpink:
+// rgb(216,120,103)
+
+//very light pink:
+// rgb(242,167,144)
+
+//light pink:
+//rgb(233,141,123)
+
+//owl grey (as the nav and footer background)
+//rgb(176,204,190);
+
+//white (for button text)
+//rgb(229,231,233)
