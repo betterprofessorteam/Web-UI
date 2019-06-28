@@ -1,11 +1,11 @@
-class Content{
-    constructor(contentElement){
-        this.contentElementProp=contentElement;
-    }
-    seeAbout(){
-        this.contentElementProp.classList.toggle('.something');
-    }
-}
+// class Content{
+//     constructor(contentElement){
+//         this.contentElementProp=contentElement;
+//     }
+//     seeContent(){
+//         this.contentElementProp.classList.toggle('visible');
+//     }
+// }
 
 
 class Tab {
@@ -14,17 +14,27 @@ class Tab {
         this.tabNum = this.element.dataset.tab;
         this.about = document.querySelectorAll(`.about[data-tab="${this.tabNum}"]`);
         this.about= Array.from(this.about).map(aboutItem => new Content(aboutItem));
-        this.element.addEventListener('click', () => this.dropContent());
+        this.element.addEventListener("click", () => this.dropContent());
     }
 
-    //functions go here! -Ryan
-    dropContent(event) {
-        let tabs = querySelectorAll(".link");
-        let drops = querySelectorAll(".about");
-        drops.forEach(drop =>{
-            drop.style.display="none"
-        });
-
+    //function
+    dropContent() {
+        // this.about.seeContent();
+        // let tabs = document.querySelectorAll(".link");
+       
+        let about = document.querySelectorAll(".about");
+        about.forEach(aboutItem =>
+            aboutItem.style.display = "none"
+        );
+        this.about.forEach(aboutItem => aboutItem.seeContent());
+    }
+}
+class Content{
+    constructor(contentElement){
+        this.contentElementProp = contentElement;
+    }
+    seeContent(){
+        this.contentElementProp.style.display = "flex";
     }
 }
 
