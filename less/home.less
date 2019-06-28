@@ -11,10 +11,11 @@
             justify-content: center;
             cursor: pointer;
 
-            a{
-                background-color: rgb(37, 78, 88);
-                color: rgb(208,155,0);
+            a {
+                background-color: rgb(176,204,190);
+                color: rgb(216,120,103);
                 font-size: 1.4rem;
+                font-weight: bold;
                 border-radius: 5px;
                 width: 15%;
                 padding: 5px;
@@ -24,12 +25,15 @@
                 text-align: center;
                 text-decoration: none;
                 border: 1px solid greenyellow;
+                @media @mobile {
+                    width: 75%;
+                }
             }
             @media @mobile {
                 width: 100%;
                 font-size:1.8rem;
                 cursor: not-allowed;
-                display: none;
+                
             }
 
         }
@@ -102,7 +106,7 @@
                 a {
                    font-weight: bold;
                    text-decoration: none;
-                   .button(rgb(37, 78, 88), rgb(208,155,0), 1.4rem);
+                   .button(rgb(176,204,190), rgb(216,120,103), 1.4rem);
                 }
                 @media @mobile {
                     width: 100%;
@@ -136,7 +140,7 @@
                 a {
                     font-weight: bold;
                     text-decoration: none;
-                    .button(rgb(37, 78, 88), rgb(208,155,0), 1.4rem);
+                    .button(rgb(176,204,190), rgb(216,120,103), 1.4rem);
                 }
                 @media @mobile {
                     width: 100%;

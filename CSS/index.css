@@ -190,8 +190,8 @@ p {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  background-color: #88bdbc;
-  border-bottom: thin inset #254e58;
+  background-color: #b0ccbe;
+  border-bottom: thin inset #b0ccbe;
 }
 @media (max-width: 500px) {
   .top {
@@ -259,9 +259,10 @@ nav a {
   cursor: pointer;
 }
 .container .information .btn a {
-  background-color: #254e58;
-  color: #d09b00;
+  background-color: #b0ccbe;
+  color: #d87867;
   font-size: 1.4rem;
+  font-weight: bold;
   border-radius: 5px;
   width: 15%;
   padding: 5px;
@@ -273,11 +274,15 @@ nav a {
   border: 1px solid greenyellow;
 }
 @media (max-width: 500px) {
+  .container .information .btn a {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
   .container .information .btn {
     width: 100%;
     font-size: 1.8rem;
     cursor: not-allowed;
-    display: none;
   }
 }
 .container .imgTwo .middleImg {
@@ -346,8 +351,8 @@ nav a {
 .container .targetMarket .professors .btn a {
   font-weight: bold;
   text-decoration: none;
-  background-color: #254e58;
-  color: #d09b00;
+  background-color: #b0ccbe;
+  color: #d87867;
   font-size: 1.4rem;
   border-radius: 5px;
   width: 100%;
@@ -393,8 +398,8 @@ nav a {
 .container .targetMarket .candidates .btn a {
   font-weight: bold;
   text-decoration: none;
-  background-color: #254e58;
-  color: #d09b00;
+  background-color: #b0ccbe;
+  color: #d87867;
   font-size: 1.4rem;
   border-radius: 5px;
   width: 100%;
@@ -496,6 +501,7 @@ body {
 }
 .navteam .mateContent .about .aboutParent .name h3 {
   border: 1px solid black;
+  color: #e5e7e9;
   display: flex;
   justify-content: center;
   width: 97%;
@@ -578,7 +584,7 @@ body {
 }
 footer {
   color: #d87867;
-  background: #88bdbc;
+  background: #b0ccbe;
   padding: 10px 0;
   border-radius: 3px;
   display: flex;
